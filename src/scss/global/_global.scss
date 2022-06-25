@@ -2,7 +2,40 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    font-family: $fontfamily;
+    font-family: $fontMain;
+}
+
+// Container
+.container {
+    max-width: ($containerWidth + $containerPadding) + px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $containerSidePadding + px;
+
+    @media (max-width: $breakpoint992) {
+        max-width: 970px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        max-width: 740px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        max-width: none;
+    }
+}
+
+// Body Locked
+body {
+    font-family: 'Metropolis';
+    min-height: 100%;
+    position: relative;
+    font-size: 1rem;
+    background: var(--background);
+
+    &.locked {
+        overflow: hidden;
+    }
 }
 
 .flex {
@@ -11,58 +44,68 @@
     justify-content: flex-start;
 }
 
-.--just-space {
-    justify-content: space-between;
+// Animations
+// Fade
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-.--just-center {
-    justify-content: center;
+.btn {
+    background: var(--neutral);
+    border-radius: 4px;
+    color: #fff;
+    padding: 11px 24px;
+    display: inline-flex;
+    gap: 7px;
+    transition: .3s all ease;
+
+    &:hover {
+        background: var(--neutral-dark);
+
+        svg {
+            transform: translate(10px);
+            transition: .3s all ease;
+        }
+    }
 }
 
-.--just-end {
-    justify-content: flex-end;
+.btn__outline {
+    border-radius: 4px;
+    color: var(--neutral);
+    padding: 11px 24px;
+    display: inline-flex;
+    transition: .3s all ease;
+
+    &:hover {
+        color: var(--neutral-dark);
+        transition: .3s all ease;
+    }
 }
 
-.--align-str {
-    align-items: stretch;
+.section__title {
+    color: var(--primary);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+
+    @media (max-width: $breakpoint992) {
+        font-size: 32px;
+        line-height: 120%;
+    }
 }
 
-.--align-center {
-    align-items: center;
-}
-
-.--align-end {
-    align-items: flex-end;
-}
-
-.--dir-col {
-    flex-direction: column;
-}
-
-html {
-    font-size: 16px;
-}
-
-html,
-body {
-    min-height: 100%;
-    position: relative;
-}
-
-body {
-    font-size: 1rem;
-    background: var(--background);
-}
-
-ul,
-ol,
-li,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
+.section__subtitle {
+    color: var(--secondary);
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
 }

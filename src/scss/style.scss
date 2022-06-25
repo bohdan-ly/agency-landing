@@ -1,34 +1,18 @@
-// **************************   SCSS   *****************************
-
+// Global SCSS-files imports
+@import './global/colors';
 @import './global/vars';
-@import './base/normalize';
-@import './global/libs';
-@import './components/navbar';
-
+@import './global/fonts';
+@import './base/_normalize';
 @import './global/global';
 
-// **************************   Default style   *****************************
+// Sections or Pages SCSS-files imports
+@import './components/header';
+@import './components/hero';
+@import './components/special';
+@import './components/trusted';
+@import './components/support';
+@import './components/footer';
 
-.container {
-    max-width: $mw + px;
-    margin: 0 auto;
-    width: 100%;
 
-    @media (max-width: $md1+px) {
-        max-width: 970px;
-    }
-
-    @media (max-width: $md2+px) {
-        max-width: 750px;
-    }
-
-    @media (max-width: $md3+px) {
-        max-width: none;
-        padding: 0 10px;
-    }
-}
-
-a {
-    text-decoration: none;
-    color: var(--primary-color);
-}
+// Libs
+// @import './libs/swiper';
