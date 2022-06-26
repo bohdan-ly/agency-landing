@@ -1,0 +1,153 @@
+.section__reviews {
+    background: var(--block3);
+    margin-top: 40px;
+    padding-top: 160px;
+    padding-bottom: 470px;
+
+    @media (max-width: $breakpoint992) {
+        padding-top: 50px;
+        padding-bottom: 400px;
+    }
+
+    .reviews {
+        position: relative;
+    }
+
+    .slide {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+
+        @media (max-width: $breakpoint1200) {
+            max-width: 100%;
+            padding: 0 100px 0 50px;
+        }
+
+        @media (max-width: $breakpoint992) {
+            gap: 15px;
+        }
+
+        @media (max-width: $breakpoint768) {
+            flex-wrap: wrap;
+            padding: 0;
+            gap: 0;
+        }
+
+        &__btn {
+            position: absolute;
+            background: none;
+            z-index: 11;
+
+            &.prev__btn {
+                left: 0;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+
+            &.next__btn {
+                right: 0;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+
+
+            @media (max-width: $breakpoint768) {
+                top: unset !important;
+                bottom: -20px;
+            }
+
+            &.swiper-button-disabled {
+
+                circle,
+                line {
+                    stroke: #B8BCC1;
+                }
+            }
+        }
+
+        &__avatar {
+            position: relative;
+
+            @media (max-width: $breakpoint992) {
+                .avatar__img {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+
+            @media (max-width: $breakpoint768) {
+                margin: 0 auto;
+
+                .avatar__img {
+                    max-width: 100%;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .play__btn {
+                position: absolute;
+                right: 40px;
+                bottom: 40px;
+
+                @media (max-width: $breakpoint992) {
+                    img {
+                        height: 75px;
+                        width: 75px;
+                    }
+                }
+            }
+        }
+
+
+        &__name {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 180%;
+            color: var(--primary-color);
+
+            @media (max-width: $breakpoint992) {
+                line-height: 1.3;
+                font-size: 16px;
+            }
+
+            @media (max-width: $breakpoint768) {
+                text-align: center;
+            }
+
+        }
+
+        &__text {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 180%;
+            color: var(--primary-color);
+            margin-top: 24px;
+
+            @media (max-width: $breakpoint992) {
+                margin-top: 10px;
+                line-height: 1.3;
+                font-size: 14px;
+            }
+
+            @media (max-width: $breakpoint768) {
+                text-align: center;
+            }
+        }
+
+        &__icon {
+            margin-top: 16px;
+
+            @media (max-width: $breakpoint768) {
+                text-align: center;
+            }
+        }
+
+    }
+}

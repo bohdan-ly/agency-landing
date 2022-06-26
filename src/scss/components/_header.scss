@@ -1,73 +1,86 @@
 // Header
-// Header
 
 // Navbar
 nav {
-    overflow: hidden;
+    // overflow: hidden;
+    padding-top: 32px;
+    
+    @media (max-width: $breakpoint768) {
+        padding-top: 18px;
+    }
 }
 
 .navbar {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding-top: 16px;
-    padding-bottom: 16px;
     align-items: center;
 }
 
-.logo__item {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 18px;
-    color: var(--primary);
+.logo {
+    a {
+        color: white;
+    }
 }
 
 .menu {
     display: flex;
-    align-items: center;
-    gap: 50px;
+    gap: 40;
+
+    @media (min-width: $breakpoint1200) {
+        gap: 30px;
+    }
 
     // .menu__item
     &__item {
-
-        &:last-child {
-            a {
-                color: #fff;
-                padding: 13px 20px;
-            }
-
-        }
+        margin-left: 25px;
     }
 
     // .menu__item-link
     &__item-link {
+        font-family: 'Poppins';
         font-style: normal;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 14px;
-        line-height: 14px;
-        color: var(--secondary);
-        display: flex;
-        align-items: center;
-        gap: 8px;
-
-        @media (max-width: $breakpoint768) {
-            gap: 0;
-        }
-
-        svg {
-            @media (max-width: $breakpoint768) {
-                display: none;
-            }
-        }
+        line-height: 160%;
+        color: var(--secondary-light-color);
+        transition: .3s color;
 
         &:hover {
-            color: var(--neutral);
-            transition: .3s all ease;
+            color: #000000;
+        }
+    }
+}
 
-            path {
-                fill: var(--neutral);
-                transition: .3s all ease;
+.nav {
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .rounded__btn {
+            min-width: 110px;
+        }
+
+        @media (max-width: $breakpoint992) {
+            margin-left: auto;
+            margin-right: 25px;
+        }
+    }
+
+    @media (max-width: $breakpoint768) {
+        &__btn {
+            display: none;
+
+            &.active {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                display: block;
+                z-index: 3;
+                border-radius: 0;
+
             }
         }
     }
@@ -80,10 +93,14 @@ nav {
 
 // Burger menu styles
 @media screen and (max-width: $burgerBreakpoint) {
+    .navbar {
+        justify-content: flex-start;
+    }
+
     // .menu
     .menu {
         position: fixed;
-        background: var(--neutral);
+        background: var(--primary);
         left: 0;
         top: 0;
         height: 100vh;
@@ -100,7 +117,7 @@ nav {
             pointer-events: all;
             justify-content: center;
             align-items: center;
-            z-index: 22;
+            z-index: 3;
             animation: fade 0.1s linear;
         }
     }
@@ -171,7 +188,7 @@ nav {
 
     // .menu__link
     .menu__item-link {
-        font-size: 26px;
-        color: white;
+        color: #ffff;
+        font-size: 25px;
     }
 }

@@ -7,12 +7,14 @@
 
 // Sections or Pages SCSS-files imports
 @import './components/header';
+@import './components/select';
 @import './components/hero';
-@import './components/special';
-@import './components/trusted';
-@import './components/support';
+@import './components/tabs';
+@import './components/selling';
+@import './components/price';
+@import './components/reviews';
 @import './components/footer';
 
 
 // Libs
-// @import './libs/swiper';
+@import './libs/swiper';

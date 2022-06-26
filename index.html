@@ -15,20 +15,458 @@
 
 <body class="main__body">
     <!-- Header -->
+    <header>
+        <!-- Navbar -->
+        <nav>
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo"> <a href="#"> <img src="/src/assets/img/logo.svg" alt="logo"> </a> </div>
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Product</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Use Case</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Learn</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Comparison</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Pricing</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Contact Sales</a></li>
+                    </ul>
+                    <div class="nav__btns">
+                        <a href="#" class="rounded__btn nav__btn">Sign Up</a>
+                        <div id="select">
+                            <input type="hidden" class="hidden__input">
+                        </div>
+                    </div>
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <!-- Main Page -->
     <main>
         <!-- Hero -->
+        <section class="section__hero">
+            <div class="container">
+                <div class="hero">
+                    <div class="hero__item left__item">
+                        <h1 class="hero__title">
+                            your agency.<br>
+                            <span>in a box.</span>
+                        </h1>
+                        <p class="hero__text">All of your work in one place. And much more</p>
+                        <form class="hero__form">
+                            <input type="email" class="hero__input" placeholder="Enter your email address">
+                            <div class="form__btns">
+                                <button class="btn form__btn" type="submit">Sign up</button>
+                                <p class="btn__text">AND BE PART OF
+                                    THE CLOSED BETA</p>
+                            </div>
+                        </form>
+                        <div class="rating">
+                            <img src="/src/assets/img/stars.svg" alt="stars">
+                            <span>Based on 100+ marketers reviews on</span>
+                        </div>
+                        <div class="logos">
+                            <img src="/src/assets/img/crowd.png" alt="crowd">
+                            <img src="/src/assets/img/trustpilot.svg" alt="trustpilot">
+                            <img src="/src/assets/img/capterra.svg" alt="capterra">
+                        </div>
+                    </div>
+                    <div class="hero__item right__item">
+                        <img src="/src/assets/img/hero__img.svg" alt="img" class="hero__img">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!-- Special -->
+        <!-- Tabs -->
 
-        <!-- Trusted -->
+        <section class="section__tabs">
+            <div class="container">
+                <div class="tabs">
+                    <div class="tabs__header">
+                        <div class="tabs__header-item active">create</div>
+                        <div class="tabs__header-item">manage</div>
+                        <div class="tabs__header-item">automate</div>
+                        <div class="tabs__header-item">chat</div>
+                        <div class="tabs__header-item">delegate</div>
+                    </div>
+                    <div class="tabs__content">
+                        <div class="tabs__content-item">
+                            <div class="tab">
+                                <div class="tab__item left__item">
+                                    <div class="section__title tab__title">all your creative tasks <span>simplified with
+                                            AI.</span>
+                                    </div>
+                                    <div class="section__text tab__text">Get content ideas, generate captions that
+                                        respects brand’s
+                                        tone of voice, design and plan your publications all in one place</div>
+                                    <div class="tab__subtitle">REPLACES</div>
+                                    <ul class="tab__tags">
+                                        <li class="tab__tag">Feedly</li>
+                                        <li class="tab__tag">Canva</li>
+                                        <li class="tab__tag">Copy.ai</li>
+                                        <li class="tab__tag">Hootsuite</li>
+                                    </ul>
 
-        <!-- Support -->
+                                    <a href="#" class="btn tab__btn">Sign up</a>
+                                </div>
+                                <div class="tab__item"><img class="tab__img" src="/src/assets/img/tab1.svg"
+                                        alt="tab img"></div>
+                            </div>
+                        </div>
+                        <div class="tabs__content-item">
+                            <div class="tab">
+                                <div class="tab__item left__item">
+                                    <div class="section__title tab__title">
+                                        find the right teammates to <span>get things done.</span>
+                                    </div>
+                                    <div class="section__text tab__text">
+                                        Access the largest network of marketing professional to delegate your tasks and
+                                        automatically orchestrate payment across teams and clients
+                                    </div>
+                                    <div class="tab__subtitle">REPLACES</div>
+                                    <ul class="tab__tags">
+                                        <li class="tab__tag">Upwork</li>
+                                        <li class="tab__tag">Malt</li>
+                                        <li class="tab__tag">Fiverr</li>
+                                    </ul>
+
+                                    <a href="#" class="btn tab__btn">Sign up</a>
+                                </div>
+                                <div class="tab__item"><img class="tab__img" src="/src/assets/img/tab2.svg"
+                                        alt="tab img"></div>
+                            </div>
+                        </div>
+                        <div class="tabs__content-item">
+                            <div class="tab">
+                                <div class="tab__item left__item">
+                                    <div class="section__title tab__title">
+                                        your entire workflow
+                                        <span>on autopilot.</span>
+                                    </div>
+                                    <div class="section__text tab__text">
+                                        Eliminate the busywork and focus on what matters with hundreds of Automations.
+                                        Automatically assign tasks, post comments, update statuses, and sync with other
+                                        tools.
+                                    </div>
+                                    <div class="tab__subtitle">REPLACES</div>
+                                    <ul class="tab__tags">
+                                        <li class="tab__tag">UiPath</li>
+                                        <li class="tab__tag">Zapier</li>
+                                        <li class="tab__tag">Airtable</li>
+                                    </ul>
+
+                                    <a href="#" class="btn tab__btn">Sign up</a>
+                                </div>
+                                <div class="tab__item"><img class="tab__img" src="/src/assets/img/tab4.svg"
+                                        alt="tab img"></div>
+                            </div>
+                        </div>
+                        <div class="tabs__content-item">
+                            <div class="tab">
+                                <div class="tab__item left__item">
+                                    <div class="section__title tab__title">
+                                        one single chat
+                                        <span>to rule them all.</span>
+                                    </div>
+                                    <div class="section__text tab__text">
+                                        Work smarter as a team with real-time chat. All your client-facing conversations
+                                        are automatically bridged to Whatsapp
+                                    </div>
+                                    <div class="tab__subtitle">REPLACES</div>
+                                    <ul class="tab__tags">
+                                        <li class="tab__tag">Slack</li>
+                                        <li class="tab__tag">MS Teams</li>
+                                        <li class="tab__tag">Whatsapp</li>
+                                    </ul>
+
+                                    <a href="#" class="btn tab__btn">Sign up</a>
+                                </div>
+                                <div class="tab__item"><img class="tab__img" src="/src/assets/img/tab3.svg"
+                                        alt="tab img"></div>
+                            </div>
+                        </div>
+                        <div class="tabs__content-item">
+                            <div class="tab">
+                                <div class="tab__item left__item">
+                                    <div class="section__title tab__title">
+                                        transparency over all the
+                                        <span>work ahead of you.</span>
+                                    </div>
+                                    <div class="section__text tab__text">
+                                        Plan, track, and manage all your work with project management
+                                        that flexes to your team's needs.
+                                    </div>
+                                    <div class="tab__subtitle">REPLACES</div>
+                                    <ul class="tab__tags">
+                                        <li class="tab__tag">Asana</li>
+                                        <li class="tab__tag">Monday</li>
+                                    </ul>
+
+                                    <a href="#" class="btn tab__btn">Sign up</a>
+                                </div>
+                                <div class="tab__item"><img class="tab__img" src="/src/assets/img/tab5.svg"
+                                        alt="tab img"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selling -->
+
+        <section class="section__selling">
+            <div class="container">
+                <div class="selling">
+                    <div class="selling__item">
+                        <div class="section__title">stop <span>selling yourself.</span></div>
+                        <div class="section__text">There is more in life than prospection. Just focus on your craft and
+                            let us take care of the rest</div>
+                    </div>
+                    <div class="selling__item">
+                        <ul class="selling__list">
+                            <li class="selling__list-item">
+                                <div class="selling__icon"><img src="/src/assets/img/selling1.svg" alt="selling icon">
+                                </div>
+                                <div class="selling__subtitle">dedicated landing page</div>
+                                <div class="selling__subtext">
+                                    When onboarding on snikpic, you will have your own
+                                    dedicated and shareable landing page optimized for conversion.
+                                </div>
+                            </li>
+                            <li class="selling__list-item">
+                                <div class="selling__icon"><img src="/src/assets/img/selling2.svg" alt="selling icon">
+                                </div>
+                                <div class="selling__subtitle">purchasable prospect</div>
+                                <div class="selling__subtext">
+                                    Use snikpic’s experience running ads and only buy from us
+                                    prospect who have shown direct interest in your profile. We take care of the rest
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Price -->
+
+        <section class="section__price">
+            <div class="container">
+                <div class="price">
+                    <div class="price__item">
+                        <div class="section__title">one simple <span>pricing.</span></div>
+                        <ul class="price__list">
+                            <li class="price__list-item-1">Unlimited features</li>
+                            <li class="price__list-item-2">Unlimited members</li>
+                            <li class="price__list-item-3">Unlimited workflows</li>
+                            <li class="price__list-item-4">Unlimited calendars</li>
+                            <li class="price__list-item-5">Unlimited meeting</li>
+                        </ul>
+                        <a href="#" class="btn price__btn">Sign up</a>
+                    </div>
+                    <div class="price__item right__item">
+                        <div class="price__info">
+                            <div class="coast">49€</div>
+                            <div class="period">/ client / month</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+
+        <section class="section__reviews">
+            <div class="container">
+                <div class="reviews">
+                    <div class="arrows">
+                        <div class="slide__btn prev__btn">
+                            <svg width="50" height="51" viewBox="0 0 50 51" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="25" cy="25.002" r="24" transform="rotate(-180 25 25.002)" stroke="#1D2736"
+                                    stroke-width="2" />
+                                <line x1="32" y1="25.002" x2="18" y2="25.002" stroke="#1D2736" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <line x1="20.5858" y1="29.002" x2="17" y2="25.4162" stroke="#1D2736" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <line x1="21" y1="21.4162" x2="17.4142" y2="25.002" stroke="#1D2736" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+
+                        </div>
+                        <div class="slide__btn next__btn">
+                            <svg width="50" height="51" viewBox="0 0 50 51" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="25" cy="25.002" r="24" stroke="#1D2736" stroke-width="2" />
+                                <line x1="18" y1="25.002" x2="32" y2="25.002" stroke="#1D2736" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <line x1="29.4142" y1="21.002" x2="33" y2="24.5877" stroke="#1D2736" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <line x1="29" y1="28.5877" x2="32.5858" y2="25.002" stroke="#1D2736" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+
+                        </div>
+                    </div>
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <div class="slide__avatar">
+                                        <img src="/src/assets/img/slide__avatar1.png" class="avatar__img" alt="avatar">
+                                        <a href="" class="play__btn">
+                                            <img src="/src/assets/img/play.svg" alt="play">
+                                        </a>
+                                    </div>
+                                    <div class="slide__info">
+                                        <div class="slide__name">1 Christophe Bourand, ChrisWebMarketing</div>
+                                        <div class="slide__text">
+                                            Juggling with all my clients and making sure everything was done correctly
+                                            took me a lot of energy. Not did Snikpic enabled me to tremendously release
+                                            that extra useless work, but I quickly found myself able to take on much
+                                            more clients than I originally could
+                                        </div>
+                                        <div class="slide__icon">
+                                            <img src="/src/assets/img/slide__icon1.png" alt="slide icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <div class="slide__avatar">
+                                        <img src="/src/assets/img/slide__avatar1.png" class="avatar__img" alt="avatar">
+                                        <a href="" class="play__btn">
+                                            <img src="/src/assets/img/play.svg" alt="play">
+                                        </a>
+                                    </div>
+                                    <div class="slide__info">
+                                        <div class="slide__name">2 Christophe Bourand, ChrisWebMarketing</div>
+                                        <div class="slide__text">
+                                            Juggling with all my clients and making sure everything was done correctly
+                                            took me a lot of energy. Not did Snikpic enabled me to tremendously release
+                                            that extra useless work, but I quickly found myself able to take on much
+                                            more clients than I originally could
+                                        </div>
+                                        <div class="slide__icon">
+                                            <img src="/src/assets/img/slide__icon1.png" alt="slide icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <div class="slide__avatar">
+                                        <img src="/src/assets/img/slide__avatar1.png" class="avatar__img" alt="avatar">
+                                        <a href="" class="play__btn">
+                                            <img src="/src/assets/img/play.svg" alt="play">
+                                        </a>
+                                    </div>
+                                    <div class="slide__info">
+                                        <div class="slide__name">3 Christophe Bourand, ChrisWebMarketing</div>
+                                        <div class="slide__text">
+                                            Juggling with all my clients and making sure everything was done correctly
+                                            took me a lot of energy. Not did Snikpic enabled me to tremendously release
+                                            that extra useless work, but I quickly found myself able to take on much
+                                            more clients than I originally could
+                                        </div>
+                                        <div class="slide__icon">
+                                            <img src="/src/assets/img/slide__icon1.png" alt="slide icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
     <!-- Footer -->
+
+    <footer>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__form">
+                    <div class="section__title form__title">
+                        apply to our <span>closed beta.</span></div>
+                    <form class="contacts__form">
+                        <div class="form__inputs">
+                            <label for="" class="contacts__label">
+                                <span>Name</span>
+                                <input type="text" class="contacts__input" placeholder="Let’s not be strangers">
+                            </label>
+                            <label for="" class="contacts__label">
+                                <span>Website</span>
+                                <input type="text" class="contacts__input" placeholder="Put the URL right there">
+                            </label>
+                            <label for="" class="contacts__label">
+                                <span>Phone Number</span>
+                                <input type="text" class="contacts__input" placeholder="470000000">
+                            </label>
+                            <label for="" class="contacts__label">
+                                <span>Email Address</span>
+                                <input type="text" class="contacts__input"
+                                    placeholder="That’s right, we need your email">
+                            </label>
+                        </div>
+                        <button class="btn contacts__btn" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer__item">
+                    <a href="#" class="footer__logo">
+                        <img src="/src/assets/img/footer__logo.svg" alt="footer logo" class="footer__img">
+                    </a>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a href="#" target="_blank">
+                                <img src="/src/assets/img/facebook.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" target="_blank">
+                                <img src="/src/assets/img/instagram.svg" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" target="_blank">
+                                <img src="/src/assets/img/linkedin.svg" alt="linkedin">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item right__item">
+                    <ul class="footer__list">
+                        <li class="footer__list-item"><a href="" class="footer__link">About us</a></li>
+                        <li class="footer__list-item"><a href="" class="footer__link">Blog</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list-item"><a href="" class="footer__link">Legal</a></li>
+                        <li class="footer__list-item"><a href="" class="footer__link">Privacy Policy</a></li>
+                        <li class="footer__list-item"><a href="" class="footer__link">Terms and conditions</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list-item"><a href="" class="footer__link">Help</a></li>
+                        <li class="footer__list-item"><a href="" class="footer__link">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copy">S SRL - VAT BE0729.842.450 - contact@s.io - Avenue Armand Huysmans 157,1050 Bruxelies
+            </div>
+        </div>
+    </footer>
 
 </body>
 

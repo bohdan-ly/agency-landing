@@ -1,144 +1,222 @@
 .section__hero {
-    padding-bottom: 86px;
-    position: relative;
 
-    @media (max-width: $breakpoint992) {
-        padding-bottom: 400px;
-    }
-    @media (max-width: $breakpoint768) {
-        padding-bottom: 450px;
-    }
-    .header__img {
-        position: absolute;
-        right: 0;
-        top: 0;
-        max-width: 880px;
-        width: 100%;
-        z-index: -1;
+    .hero {
+        padding-top: 61px;
+        display: flex;
+        align-items: center;
+        gap: 66px;
 
         @media (max-width: $breakpoint1200) {
-            max-width: 600px;
+            gap: 30px;
         }
-        @media (max-width: $breakpoint992) {
-            top: unset;
-            bottom: 0;
+
+        @media (max-width: $breakpoint768) {
+            flex-wrap: wrap;
         }
-        @media (max-width: $breakpoint480) {
-            bottom: 100px;
+
+        &__item {
+            &.left__item {
+                flex: 0 1 412px;
+
+
+                @media (max-width: $breakpoint1450) {
+                    flex: 0 1 48%;
+                }
+
+                @media (max-width: $breakpoint1450) {
+                    flex: 0 1 100%;
+                }
+            }
+
+            &.right__item {
+                @media (max-width: $breakpoint1200) {
+                    flex: 0 1 48%;
+                }
+
+                @media (max-width: $breakpoint768) {
+                    flex: 0 1 100%;
+                }
+            }
+        }
+
+        &__title {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 110%;
+            letter-spacing: -0.03em;
+            color: var(--primary-color);
+
+            span {
+                color: var(--contrast-color);
+            }
+
+            @media (max-width: $breakpoint1200) {
+                font-size: 48px;
+            }
+
+            @media (max-width: $breakpoint992) {
+                font-size: 34px;
+            }
+
+            @media (max-width: $breakpoint480) {
+                font-size: 28px;
+            }
+        }
+
+
+        &__text {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 180%;
+            color: var(--secondary-color);
+            margin-top: 16px;
+
+            @media (max-width: $breakpoint1200) {
+                font-size: 16px;
+                margin-top: 5px;
+            }
+
+            @media (max-width: $breakpoint992) {
+                font-size: 14px;
+            }
+        }
+
+        &__form {
+            width: 100%;
+            margin-top: 32px;
+
+            @media (max-width: $breakpoint1200) {
+                margin-top: 15px;
+            }
+        }
+
+        &__input {
+            width: 100%;
+            padding: 14px 22px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 180%;
+            color: var(--secondary-color);
+            border: 1px solid #DFE8FA;
+            border-radius: 15px;
+            outline: none;
+
+            @media (max-width: $breakpoint1200) {
+                font-size: 16px;
+                padding: 10px 18px;
+            }
+
+            @media (max-width: $breakpoint992) {
+                padding: 6px 12px;
+                font-size: 14px;
+            }
+
+            &:focus {
+                border-color: var(--primary);
+            }
+
+            &::placeholder {
+                color: var(--secondary-light-color);
+            }
+        }
+
+        &__img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+
+            @media (max-width: $breakpoint1200) {
+                flex: 0 1 48%;
+            }
         }
     }
-}
 
-.hero__title {
-    padding-top: 100px;
-    color: var(--primary);
-    max-width: 387px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 62px;
+    .form {
+        &__btns {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin-top: 16px;
 
-    @media (max-width: $breakpoint1200) {
-        padding-top: 75px;
-    }
-    @media (max-width: $breakpoint992) {
-        padding-top: 50px;
-        font-size: 36px;
-        line-height: 120%;
-        max-width: 100%;
-    }
-    @media (max-width: $breakpoint480) {
-        font-size: 28px;
-    }
-}
-.hero__subtitle {
-    margin-top: 15px;
-    color: var(--secondary);
-    max-width: 500px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 28px;
+            @media (max-width: $breakpoint1200) {
+                margin-top: 12px;
+            }
+        }
 
-    @media (max-width: $breakpoint992) {
-        max-width: 100%;
+        &__btn {}
     }
-}
-.hero__buttons {
-    margin-top: 30px;
 
-    @media (max-width: $breakpoint480) {
+    .btn {
+        &__text {
+            max-width: 140px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 146%;
+            color: #BBC0C7;
+
+            @media (max-width: $breakpoint1200) {
+                font-size: 12px;
+            }
+
+            @media (max-width: $breakpoint992) {
+                font-size: 10px;
+                max-width: 100%;
+            }
+        }
+    }
+
+    .rating {
+        font-family: 'Poppins';
+        margin-top: 32px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 180%;
+        color: var(--secondary-color);
+
         display: flex;
-        flex-direction: column;
-        margin-top: 0;
-    }
-}
+        align-items: center;
+        gap: 12px;
 
-.hero__btn {
-    @media (max-width: $breakpoint480) {
-        justify-content: center;
-        margin-top: 20px;
-    }
-}
-.hero__stats-title {
-    margin-top: 130px;
-    color: var(--secondary-light);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+        @media (max-width: $breakpoint1200) {
+            margin-top: 16px;
+        }
 
-    @media (max-width: $breakpoint1200) {
-        margin-top: 75px;
-    }
-    @media (max-width: $breakpoint992) {
-        margin-top: 50px;
-        line-height: 120%;
-    }
-}
-.hero__stats {
-    display: flex;
-    gap: 80px;
+        @media (max-width: $breakpoint992) {
+            font-size: 12px;
+            gap: 6px;
 
-    @media (max-width: $breakpoint992) {
-        gap: 50px;
-    }
-    @media (max-width: $breakpoint480) {
-        gap: 25px;
-    }
-}
+            img {
+                max-width: 100px;
+            }
+        }
 
-.hero__stats-item--num {
-    margin-top: 35px;
-    color: var(--primary);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 36px;
-    text-align: center;
-
-    @media (max-width: $breakpoint992) {
-        font-size: 26px;
-        line-height: 100%;
-    }
-    @media (max-width: $breakpoint480) {
-        font-size: 22px;
+        @media (max-width: $breakpoint480) {
+            flex-direction: column;
+        }
     }
 
-}
-.hero__stats-item--text {
-    margin-top: 12px;
-    color: var(--secondary);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
-    text-transform: uppercase;
+    .logos {
+        margin-top: 17px;
+        display: flex;
+        align-items: center;
+        gap: 38px;
 
-    @media (max-width: $breakpoint480) {
-        margin-top: 5px;
-        font-size: 12px;
+        @media (max-width: $breakpoint992) {
+            gap: 16px;
+        }
+
+        @media (max-width: $breakpoint480) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 }

@@ -1,0 +1,144 @@
+.section__price {
+    margin-top: 40px;
+
+
+    .price {
+        display: flex;
+        align-items: center;
+
+
+        @media (max-width: $breakpoint768) {
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            flex: 0 1 50%;
+
+            @media (max-width: $breakpoint768) {
+                flex: 0 1 100%;
+            }
+
+            &.right__item {
+                display: flex;
+                align-self: center;
+                justify-content: center;
+                height: 100%;
+                background: url('@assets/img/price__bg.svg') center / cover no-repeat;
+                padding: 390px 0;
+
+                @media (max-width: $breakpoint1200) {
+                    padding: 250px 0;
+                }
+
+                @media (max-width: $breakpoint768) {
+                    background: url('@assets/img/price__bg-mob.svg') center / cover no-repeat;
+                    padding: 50px 0;
+                    margin-top: 30px;
+                }
+            }
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 40px;
+
+            @media (max-width: $breakpoint992) {
+                margin-top: 20px;
+                gap: 12px;
+            }
+
+            li {
+                padding: 8px 20px;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 180%;
+                border-radius: 24px;
+
+                @media (max-width: $breakpoint992) {
+                    font-size: 14px;
+                }
+
+                @media (max-width: $breakpoint480) {
+                    font-size: 12px;
+                    padding: 4px 12px;
+                }
+            }
+
+            &-item {
+                &-1 {
+                    background: #FFF1EF;
+                    border: 1px solid #FFD1CA;
+                    color: #FF8B7A;
+                }
+
+                &-2 {
+                    background: #FFF8EE;
+                    border: 1px solid #FFCA7A;
+                    color: #FFAC2F;
+                }
+
+                &-3 {
+                    background: #ECFFF4;
+                    border: 1px solid #98FAC0;
+                    color: #3ACD77;
+                }
+
+                &-4 {
+                    background: #F1FEFF;
+                    border: 1px solid #6EE1E9;
+                    color: #2BC0CA;
+                }
+
+                &-5 {
+                    background: #FCF5FF;
+                    border: 1px solid #EBBDFF;
+                    color: #C140FD;
+                }
+            }
+        }
+
+        &__btn {
+            margin-top: 40px;
+
+            @media (max-width: $breakpoint992) {
+                margin-top: 20px;
+            }
+        }
+
+        &__info {
+
+            .coast {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 120px;
+                line-height: 80%;
+                /* identical to box height, or 96px */
+                color: var(--primary-color);
+                letter-spacing: -0.03em;
+
+                @media (max-width: $breakpoint992) {
+                    font-size: 80px;
+                }
+
+                @media (max-width: $breakpoint768) {
+                    font-size: 64px;
+                }
+            }
+
+            .period {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 180%;
+                margin-top: 16px;
+                color: var(--primary-color);
+            }
+        }
+    }
+}
